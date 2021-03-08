@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="YeEeck" />
+    <meta charset="utf-8">
+    <meta name="generator" content="Visual Studio Code" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <style type="text/css">
+        input {
+            width: 3em;
+            text-align: center;
+        }
+    </style>
+    <script src="index.js"></script>
+    <title>组合数计算器</title>
+</head>
+
+<body style="text-align: center;">
+    <h1>组合数计算器</h1>
+    <br />
+    <table align="center">
+        <tr>
+            <td rowspan="2">
+                <span style="font-size: 5em;">C</span>
+            </td>
+            <td>
+                <input type="text" oninput="changed('inputN')" id="inputN" />
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" oninput="changed('inputM')" id="inputM"></td>
+        </tr>
+    </table>
+    <br />
+    <button onclick="cal()" style="width: 6em;height: 2.5em;">计算</button>
+    <br />
+    <br />
+    计算结果：<input id="res" type="text" style="width: 6em;" readonly="readonly" />
+</body>
+
+</html>
